@@ -6,8 +6,11 @@ gem "rails", "~> 7.1.5"
 gem "sqlite3", "~> 1.7"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-# gem "jbuilder"
+  # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+  # gem "jbuilder"
+  #
+  gem "rack-cors", require: "rack/cors"
+
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -55,7 +58,6 @@ group :development, :test do
   gem "faraday", "< 2.0"
   gem "fiddle"
   gem "jwt"
-  gem "rack-cors", require: "rack/cors"
   gem "dotenv-rails"       # For environment variables
   # gem 'ruby-pptx', git: 'https://github.com/ankane/ruby-pptx.git'
 
