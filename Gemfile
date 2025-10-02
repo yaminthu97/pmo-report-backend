@@ -55,7 +55,7 @@ group :development, :test do
   gem "faraday", "< 2.0"
   gem "fiddle"
   gem "jwt"
-  gem "rack-cors"
+  gem "rack-cors", require: "rack/cors"
   gem "dotenv-rails"       # For environment variables
   # gem 'ruby-pptx', git: 'https://github.com/ankane/ruby-pptx.git'
 
